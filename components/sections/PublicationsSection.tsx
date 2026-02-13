@@ -16,7 +16,7 @@ const PublicationsSection: React.FC<Props> = ({ limit }) => {
       <div className="flex justify-between items-end mb-12">
         <div>
           <h2 className="text-sm font-bold uppercase tracking-[0.3em] text-academic-highlight mb-6">Scientific Output</h2>
-          <h3 className="text-4xl font-serif font-bold text-academic-primary">Selected Publications</h3>
+          <h3 className="text-3xl md:text-4xl font-serif font-bold text-academic-primary">Selected Publications</h3>
         </div>
         {limit && (
           <Link to="/publications" className="text-sm font-bold text-academic-highlight hover:underline uppercase tracking-widest pb-1 border-b-2 border-academic-highlight/20">

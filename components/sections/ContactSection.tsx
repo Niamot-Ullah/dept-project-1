@@ -92,7 +92,7 @@ const ContactSection: React.FC = () => {
               </div>
               <div>
                 <p className="text-xs font-bold uppercase tracking-widest text-academic-muted mb-1">Email</p>
-                <a href={`mailto:${PROFILE.email}`} className="text-xl font-medium text-academic-primary hover:text-academic-highlight transition-colors">
+                <a href={`mailto:${PROFILE.email}`} className="text-md md:text-xl font-medium text-academic-primary hover:text-academic-highlight transition-colors">
                   {PROFILE.email}
                 </a>
               </div>
@@ -107,7 +107,7 @@ const ContactSection: React.FC = () => {
               </div>
               <div>
                 <p className="text-xs font-bold uppercase tracking-widest text-academic-muted mb-1">Office</p>
-                <p className="text-xl font-medium text-academic-primary">{PROFILE.office}</p>
+                <p className="text-md md:text-xl font-medium text-academic-primary">{PROFILE.office}</p>
                 <p className="text-academic-muted mt-1">{PROFILE.address}</p>
               </div>
             </div>

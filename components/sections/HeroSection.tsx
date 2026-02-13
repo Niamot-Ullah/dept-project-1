@@ -6,7 +6,7 @@ import img from '../../assets/img.jpg';
 
 const HeroSection: React.FC = () => {
   return (
-    <section className="relative -mx-6 sm:-mx-12 lg:-mx-24 px-6 sm:px-12 lg:px-24 pt-16 pb-24 bg-slate-50 border-b border-slate-200 overflow-hidden rounded-2xl">
+    <section className="relative -mx-6 sm:-mx-12 lg:-mx-24 md:px-6  lg:px-16 pt-16 md:pb-20   bg-slate-50 border-b border-slate-200 overflow-hidden rounded-2xl">
       {/* Decorative Background Pattern */}
       <div className="absolute inset-0 opacity-[0.03] pointer-events-none" style={{ backgroundImage: 'radial-gradient(#0f172a 1px, transparent 1px)', backgroundSize: '24px 24px' }}></div>
 
@@ -17,20 +17,20 @@ const HeroSection: React.FC = () => {
             {PROFILE.university}
           </div>
 
-          <h1 className="text-5xl lg:text-7xl font-serif font-bold text-academic-primary mb-4 tracking-tight leading-tight">
+          <h1 className="text-4xl lg:text-6xl font-serif font-bold text-academic-primary mb-2.5 tracking-tight leading-tight">
             {PROFILE.name}
           </h1>
 
           <div className="mb-8">
-            <p className="text-xl font-serif text-academic-secondary italic mb-1">
+            <p className="text-lg md:text-xl font-serif text-academic-secondary italic mb-1">
               {PROFILE.title}
             </p>
-            <p className="text-lg font-medium text-academic-muted uppercase tracking-wider">
+            <p className="text-md md:text-lg font-medium text-academic-muted uppercase tracking-wider">
               {PROFILE.department}
             </p>
           </div>
 
-          <p className="text-md text-academic-secondary/80 leading-relaxed mb-10 max-w-2xl mx-auto lg:mx-0 font-light">
+          <p className="text-sm lg:text-md text-academic-secondary/80 leading-relaxed mb-10 max-w-2xl mx-auto lg:mx-0 font-light">
             {PROFILE.shortBio}
           </p>
 
@@ -76,13 +76,13 @@ const HeroSection: React.FC = () => {
 
           </div>
 
-          <div className="flex flex-wrap justify-center lg:justify-start gap-2">
+          {/* <div className="flex flex-wrap justify-center lg:justify-start gap-2">
             {RESEARCH_INTERESTS.map(interest => (
               <span key={interest} className="text-[10px] font-bold text-academic-muted bg-white px-4 py-2 rounded-lg border border-slate-200 shadow-sm transition-transform hover:scale-105">
                 {interest}
               </span>
             ))}
-          </div>
+          </div> */}
         </div>
 
         <div className="relative w-72 h-72 lg:w-[420px] lg:h-[420px] flex-shrink-0 animate-fade-in group">

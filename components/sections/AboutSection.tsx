@@ -7,8 +7,8 @@ const AboutSection: React.FC = () => {
     <section className="py-24 animate-fade-up">
       <div className="max-w-3xl">
         <h2 className="text-sm font-bold uppercase tracking-[0.3em] text-academic-highlight mb-6">Introduction</h2>
-        <h3 className="text-4xl font-serif font-bold text-academic-primary mb-8">Academic Biography</h3>
-        <div className="space-y-6 text-lg text-academic-secondary leading-relaxed font-light">
+        <h3 className="text-3xl md:text-4xl font-serif font-bold text-academic-primary mb-8">Academic Biography</h3>
+        <div className="space-y-6 text-md md:text-lg  text-academic-secondary leading-relaxed font-light">
           <p>
             {PROFILE.longBio}
           </p>

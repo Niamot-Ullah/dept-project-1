@@ -16,7 +16,7 @@ const Footer: React.FC = () => {
           <div className="flex space-x-6">
             <a href={`mailto:${PROFILE.email}`} className="hover:text-academic-primary transition-colors">Email</a>
             <a href={PROFILE.scholarUrl} target="_blank" rel="noopener noreferrer" className="hover:text-academic-primary transition-colors">Google Scholar</a>
-            <a href={PROFILE.cvUrl} className="hover:text-academic-primary transition-colors">Curriculum Vitae</a>
+            <a href={PROFILE.fbUrl} target='_blank' className="hover:text-academic-primary transition-colors">Facebook</a>
           </div>
           <p>© {new Date().getFullYear()} {PROFILE.name}. All rights reserved.</p>
         </div>
