@@ -7,8 +7,9 @@ interface Props {
 }
 
 const PublicationCard: React.FC<Props> = ({ pub }) => {
+  console.log(pub);
   return (
-    <div className="py-6 border-b border-slate-100 last:border-0 hover:bg-slate-50 transition-colors px-2 rounded-lg -mx-2">
+    <div className=" hover:shadow-lg transition-all shadow-sm pl-6  py-6 border-b border-slate-100 last:border-0 hover:bg-gray-50 transition-colors px-2 rounded-xl -mx-2">
       <div className="flex flex-col md:flex-row md:items-start justify-between">
         <div className="flex-1">
           <h3 className="text-lg font-serif font-bold text-academic-primary mb-1 leading-snug">
@@ -36,7 +37,9 @@ const PublicationCard: React.FC<Props> = ({ pub }) => {
           {pub.pdfUrl && pub.pdfUrl !== "#" && (
             <a 
               href={pub.pdfUrl} 
-              className="text-academic-secondary hover:text-academic-primary border border-academic-accent px-3 py-1.5 rounded transition-all flex items-center justify-center min-w-[80px]"
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-academic-secondary hover:text-academic-primary border border-academic-accent px-3 py-1.5 rounded transition-all flex items-center justify-center min-w-[80px] overflow-hidden transition-all hover:shadow-2xl hover:shadow-academic-primary/20 hover:-translate-y-1 hover:bg-blue-500"
             >
               PDF
             </a>

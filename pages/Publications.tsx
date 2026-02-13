@@ -10,8 +10,10 @@ const Publications: React.FC = () => {
         <p className="text-xl text-academic-muted leading-relaxed max-w-3xl">
           A comprehensive archive of peer-reviewed journal articles and conference proceedings.
         </p>
-      </div>
+      </div >
+      <div className="grid gap-12">
       <PublicationsSection />
+      </div>
     </div>
   );
 };

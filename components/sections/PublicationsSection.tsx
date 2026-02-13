@@ -20,14 +20,14 @@ const PublicationsSection: React.FC<Props> = ({ limit }) => {
         </div>
         {limit && (
           <Link to="/publications" className="text-sm font-bold text-academic-highlight hover:underline uppercase tracking-widest pb-1 border-b-2 border-academic-highlight/20">
-            View Archive →
+            View More →
           </Link>
         )}
       </div>
 
-      <div className="divide-y divide-slate-100">
+      <div className="divide-y divide-slate-100 space-y-4">
         {displayedPubs.map(pub => (
-          <PublicationCard key={pub.id} pub={pub} />
+          <PublicationCard  key={pub.id} pub={pub} />
         ))}
       </div>
     </section>
