@@ -6,6 +6,9 @@ import Swal from "sweetalert2";
 const ContactSection: React.FC = () => {
   const [formStatus, setFormStatus] = useState<'idle' | 'sending' | 'sent'>('idle');
   const form = useRef<HTMLFormElement>(null);
+  const serviceId = "service_r7zal3s"
+  const templateId = "template_wyu3nn4"
+  const publicKey = "J8ukz7Sv3kzB6h6RN"
 
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -15,8 +18,8 @@ const ContactSection: React.FC = () => {
     // const OWNER_EMAIL = "your-new-email@example.com";
 
     emailjs
-      .sendForm("service_ld934jh", "template_5q344nk", form.current, {
-        publicKey: "V5MNJUUa3XaoH3AYt",
+      .sendForm(serviceId, templateId, form.current, {
+        publicKey: publicKey,
         
       })
       .then(
