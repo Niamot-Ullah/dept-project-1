@@ -10,7 +10,7 @@ const About: React.FC = () => {
       <AboutSection />
       <EducationSection />
       <TeachingCareerSection />
-      <div className="py-24 border-t border-slate-100">
+      {/* <div className="py-24 border-t border-slate-100">
         <h2 className="text-sm font-bold uppercase tracking-[0.3em] text-academic-highlight mb-12">Academic Philosophy</h2>
         <div className="prose prose-slate max-w-none text-academic-secondary">
           <p className="text-xl font-serif italic mb-8">
@@ -23,7 +23,7 @@ const About: React.FC = () => {
             I am committed to fostering a learning environment where students develop critical thinking skills and the quantitative proficiency necessary to navigate the complexities of global and local economies.
           </p>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

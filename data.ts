@@ -17,7 +17,7 @@ longBio: "Md. Tanvir Ahmed is an Associate Professor in the Faculty of Economics
   fbUrl:"https://www.facebook.com/Economicsbu03",
   cvUrl: "#",
   scholarUrl: "https://scholar.google.com/citations?user=ToVHNlUAAAAJ&hl=en",
-  office: "Room 302, Academic Building 1",
+  office: "Room 1111, Academic Building 1",
   address: "University of Barishal, Barishal, Bangladesh",
   officeHours: "Sunday to Thursday 10:00 AM – 2:00 PM (or by appointment)"
 };

@@ -9,9 +9,9 @@ const EducationSection: React.FC = () => {
       <div className="grid md:grid-cols-3 gap-12">
         {EDUCATION.map((edu, idx) => (
           <div key={idx} className="group relative">
-            <div className="text-6xl font-serif font-black text-slate-50 absolute -top-8 -left-4 z-0 group-hover:text-slate-100 transition-colors">
+            {/* <div className="text-6xl font-serif font-black text-slate-50 absolute -top-8 -left-4 z-0 group-hover:text-slate-100 transition-colors">
               0{idx + 1}
-            </div>
+            </div> */}
             <div className="relative z-10">
               <span className="text-academic-highlight font-bold mb-2 block">{edu.year}</span>
               <h4 className="text-xl font-serif font-bold text-academic-primary mb-2">{edu.degree}</h4>

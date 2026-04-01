@@ -6,10 +6,15 @@ import Swal from "sweetalert2";
 const ContactSection: React.FC = () => {
   const [formStatus, setFormStatus] = useState<'idle' | 'sending' | 'sent'>('idle');
   const form = useRef<HTMLFormElement>(null);
+  
+
+
   const serviceId = "service_r7zal3s"
   const templateId = "template_wyu3nn4"
   const publicKey = "J8ukz7Sv3kzB6h6RN"
 
+
+  
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setFormStatus('sending');
@@ -118,7 +123,7 @@ const ContactSection: React.FC = () => {
         </div>
 
         {/* right */}
-        <div className="w-full">
+        {/* <div className="w-full">
           <form ref={form} onSubmit={sendEmail} className="space-y-6">
             <div>
               <label htmlFor="user_name" className="block text-xs font-bold text-academic-muted uppercase mb-2">
@@ -187,7 +192,9 @@ const ContactSection: React.FC = () => {
               )}
             </button>
           </form>
-        </div>
+        </div> */}
+
+
       </div>
     </section>
   );
